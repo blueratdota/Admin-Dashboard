@@ -5,38 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="scripts.js" defer></script>
 </head>
 <body>
 
     <header class="main-header">
         <div class="top-row">
-            <div class="search-bar"></div>
-            <div class="user-name"></div>
+            <div class="search">
+                <img class="header-icons" src="./assets/icons/svg/search.svg" alt="">
+                <div class="search-container"><input class="search-bar" type="text" placeholder="   Looking for something?"></div>
+            </div>
+            <div class="user-name">
+                <img class="header-icons" src="./assets/icons/svg/notif.svg" alt="">
+                <div>
+                    <img class="profile-small" src="./assets/images/profle.jpg" alt="">
+                </div>
+                <p class="name-small">Speedy Boi</p>
+            </div>
         </div>
         <div class="bottom-row">
-            <div class="user-greeting"></div>
-            <div class="action-buttons"></div>
+            <div class="user-greeting">
+                <div>
+                    <img class="profile-big" src="./assets/images/profle.jpg" alt="">
+                </div>
+                <div>
+                    <p>Hi there,</p>
+                    <p class="name-big">Speedy Boi(@speed300mph)</p>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
         </div>
     </header>
 
     <nav class="side-bar">
-        <div class="site-logo"></div>
+
+        <div class="site-logo">
+            <img class="logo-img" src="./assets/icons/svg/engine.svg" alt="">
+            <h1>Dashboard</h1>
+        </div>
+
         <div class="pages">
             <ul>
-               <li>Home</li> 
-               <li>Profile</li>
-               <li>Messages</li>
-               <li>History</li>
-               <li>Tasks</li>
-               <li>Communities</li>
+               <li>
+                    <img class="page-icons" src="assets/icons/svg/home.svg" alt="">
+                    <p>Home</p>
+                </li> 
+               <li>
+                    <img class="page-icons" src="assets/icons/svg/account-box.svg" alt="">
+                    <p>Profile</p>
+                </li>
+               <li>
+                    <img class="page-icons" src="assets/icons/svg/message-text.svg" alt="">
+                    <p>Messages</p>
+                </li>
+               <li>
+                    <img class="page-icons" src="assets/icons/svg/clock-time-four.svg" alt="">
+                    <p>History</p>
+                </li>
+               <li>
+                    <img class="page-icons" src="assets/icons/svg/note-multiple.svg" alt="">
+                    <p>Tasks</p>
+                </li>
+               <li>
+                    <img class="page-icons" src="assets/icons/svg/account-group.svg" alt="">
+                    <p>Communities</p>
+                </li>
             </ul>
         </div>
+
         <div class="settings">
             <ul>
-                <li>Settings/li> 
-                <li>Support</li>
-                <li>Privacy</li>
+                <li>
+                    <img class="page-icons" src="assets/icons/svg/cogs.svg" alt="">
+                    <p>Settings</p>
+                </li> 
+                <li>
+                    <img class="page-icons" src="assets/icons/svg/chat-question.svg" alt="">
+                    <p>Support</p>
+                </li>
+                <li>
+                    <img class="page-icons" src="assets/icons/svg/shield-key.svg" alt="">
+                    <p>Privacy</p>
+                </li>
              </ul>
         </div>
     </nav>
